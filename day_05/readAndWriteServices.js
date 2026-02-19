@@ -12,7 +12,9 @@ export const writeJsonFile = async(path, data)=>{
         await fs.writeFile(path,JSON.stringify(data,2,null));
         console.log("Data has been written successfully");       
     } catch (error) {
-        console.log("unable to write");     
+        console.log("unable to write" + error.message);   
+        
+          
     }
 }
 
