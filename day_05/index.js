@@ -9,7 +9,7 @@ app.get("/students",async(req,res)=>{
         const data = await readJsonFile("./students.json")
         res.send(data);
      } catch (error) {
-        
+         res.status(500).send({message:"Error reading the file",error:error.message})  
      }
 })
 
