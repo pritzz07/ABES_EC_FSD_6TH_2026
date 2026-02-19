@@ -32,8 +32,4 @@ const deleteStudentById = async (id) => {
   }
 };
 
-
-
-
-
 deleteStudentById(222);
